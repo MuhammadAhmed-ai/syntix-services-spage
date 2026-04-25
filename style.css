@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* LEFT SIDE */
+.content-section {
+    margin-left: 50px;
+    flex: 1;
+    min-width: 300px;
+}
+.description strong{
+    color: rgb(212, 19, 212);
+}
+.top-tag {
+    font-size: 15px;
+    font-weight: 750;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 38px;
+    font-weight: 1000;
+    color: #20419c;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+/* SERVICES GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-item {
+    transition: 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE ICON BOX */
+.icon-box {
+    width: 55px;
+    height: 55px;
+    background: #131414;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.icon-box img {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+
+.service-item h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1e2a4a;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* RIGHT SIDE IMAGE */
+.image-section {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.services-wrapper{
+    padding:80px 60px;
+}
+
+/* GRID (3 per row) */
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+/* CARD */
+.service-card{
+    background:#fff;
+    padding:40px 30px 30px  20px;
+    border-radius:18px;
+    position:relative;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.4s ease;
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+     display:flex;
+    flex-direction:column;
+}
+
+/* IMAGE */
+.service-img{
+    width:90px;
+    height:90px;
+    border-radius:14px;
+    position:absolute;
+    top:-35px;
+    left:45px;
+    object-fit:cover;
+    border:3px solid #fff;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.service-card h3{
+    font-size:30px;
+    margin-top:50px;
+    margin-bottom:20px;
+    color:#223770;
+}
+
+/* DESCRIPTION */
+.service-card p{
+    font-size:14px;
+    color:#0a0a0a;
+    margin-bottom:25px;
+    line-height:1.6;
+    flex-grow: 1;
+}
+
+/* BUTTON */
+.service-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding:12px 18px;
+    border-radius:30px;
+    border:2px solid #881717;
+    cursor:pointer;
+    transition:0.4s ease;
+    background:#fff;
+     margin-top:10px;
+}
+
+/* ARROW */
+.service-arrow{
+    width:35px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#1e2a4a;
+    color:#fff;
+    transition:0.3s ease;
+}
+
+/* HOVER EFFECT */
+.service-card:hover{
+    background:#ffd54f;
+    transform:translateY(-10px);
+}
+
+.service-card:hover h3,
+.service-card:hover p{
+    color:#000;
+}
+
+/* BUTTON HOVER BORDER */
+.service-card:hover .service-btn{
+    border:2px solid transparent;
+    background:
+        linear-gradient(#ffd54f,#ffd54f) padding-box,
+        linear-gradient(45deg,blue,purple) border-box;
+}
+
+/* ARROW HOVER */
+.service-card:hover .service-arrow{
+    background:linear-gradient(45deg,blue,purple);
+    transform:rotate(20deg);
+}
