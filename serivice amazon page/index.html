@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon FBA Guide</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            overflow-x: hidden;
+        }
+
+        /* HERO */
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4)),
+                url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            animation: heroZoom 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroZoom {
+            from {
+                background-size: 100%;
+            }
+
+            to {
+                background-size: 110%;
+            }
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 900px;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            animation: fadeUp 1s ease;
+        }
+
+        .hero-content p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            animation: fadeUp 1.5s ease;
+        }
+
+        .hero-content span {
+            color: #00AEEF;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 60px 0;
+            display: grid;
+            gap: 55px;
+        }
+
+        /* CARD */
+        .card {
+            position: relative;
+            background: #fff;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #0a66c2;
+            overflow: hidden;
+            transition: 0.4s ease;
+
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        /* SCROLL ANIMATION ACTIVE */
+        .card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* HOVER EFFECT */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, #00c6ff, #0072ff);
+            opacity: 0.12;
+            transition: 0.5s;
+        }
+
+        .card:hover::before {
+            left: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+            border-left: 5px solid #00c6ff;
+        }
+
+        .card h2 {
+            color: #0a66c2;
+            font-size: 48px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover h2 {
+            color: #0072ff;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+            font-size: 22px;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        th {
+            background: #0a66c2;
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Amazon FBA Explained: How It Works & Key Strategies for Success</h1>
+            <p>By <span>Jodi Cape</span></p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+
+        <div class="card">
+            <h2>Key benifits of amazoon FBA</h2>
+            <ul>
+                <li>✔ Prime Eligibility – Gain access to Amazon’s vast customer base and increase sales.</li>
+                <li>✔ Faster Shipping – Amazon handles fulfillment with 1- to 2-day delivery options.</li>
+                <li>✔ Lower Shipping Costs – Discounted rates through Amazon’s logistics network.</li>
+                <li>✔ Scalability – Easily expand without needing a personal warehouse.</li>
+                <li>✔ Customer Service & Returns – Amazon manages inquiries, refunds, and returns.</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h2>What Is Amazon FBA?</h2>
+            <ul>
+                <li> Amazon FBA (Fulfillment by Amazon) is a logistics solution where sellers send inventory to Amazon
+                    fulfillment centers, and Amazon handles storage, order fulfillment, and customer service.</li>
+                <li>Businesses of all sizes use FBA to simplify operations and enhance customer experience with fast
+                    shipping, inventory management, and hassle-free returns.</li>
+                    
+            </ul>
+            <br>
+            <h2>Common use cases for Amazon FBA:</h2>
+            <ul>
+                 <li>E-commerce brands scaling their fulfillment operations.</li>
+                <li>Private label and wholesale sellers.</li>
+                <li>Retail arbitrage and online arbitrage businesses.</li>
+                <li>Dropshipping businesses looking to leverage Amazon’s logistics.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Seller Registration Services</h2>
+            <ul>
+                <li>Registration & Documentation</li>
+                <li>Category Approval</li>
+                <li>Brand Registry</li>
+                <li>GTIN Exemption</li>
+                <li>Listings</li>
+                <li>Live Account</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>How Amazon FBA Works</h2>
+            <p>You send products → Amazon stores, packs, ships & handles returns.</p>
+        </div>
+
+        <div class="card">
+            <h2>Product Listing Services</h2>
+            <ul>
+                <li>Product Upload</li>
+                <li>Keyword Research</li>
+                <li>Title Optimization</li>
+                <li>Bullet Points</li>
+                <li>Description Writing</li>
+                <li>Backend Keywords</li>
+                <li>Image Optimization</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Account Management Services</h2>
+            <ul>
+                <li>SEO Optimization</li>
+                <li>Inventory Management</li>
+                <li>Account Health</li>
+                <li>Advertising</li>
+                <li>Returns Handling</li>
+                <li>Sales Strategy</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>FBA vs FBM</h2>
+
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>FBA</th>
+                    <th>FBM</th>
+                </tr>
+
+                <tr>
+                    <td>Shipping</td>
+                    <td>Amazon</td>
+                    <td>Seller</td>
+                </tr>
+
+                <tr>
+                    <td>Prime</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+                    <td>Storage</td>
+                    <td>Amazon</td>
+                    <td>Seller</td>
+                </tr>
+
+                <tr>
+                    <td>Returns</td>
+                    <td>Amazon</td>
+                    <td>Seller</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- SCROLL ANIMATION JS -->
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        window.addEventListener('scroll', () => {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    card.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

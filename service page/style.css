@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #ffffff;
     color: #333;
+    overflow-x: hidden;
 }
 
 .container {
@@ -129,33 +130,34 @@ body {
 /* GRID (3 per row) */
 .services-grid{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:30px;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:25px;
+    align-items:stretch;
 }
 
 /* CARD */
 .service-card{
     background:#fff;
-    padding:40px 30px 30px  20px;
+    padding:40px 25px 25px  25px;
     border-radius:18px;
     position:relative;
     box-shadow:0 10px 25px rgba(0,0,0,0.05);
     transition:0.4s ease;
     margin-top: 50px;
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: auto;
      display:flex;
     flex-direction:column;
 }
 
 /* IMAGE */
 .service-img{
-    width:90px;
-    height:90px;
+    width:80px;
+    height:80px;
     border-radius:14px;
     position:absolute;
     top:-35px;
-    left:45px;
+    left:20px;   /* fixed position */
     object-fit:cover;
     border:3px solid #fff;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
@@ -209,7 +211,7 @@ body {
 
 /* HOVER EFFECT */
 .service-card:hover{
-    background:#ffd54f;
+    background:#96a9ff;
     transform:translateY(-10px);
 }
 
@@ -222,12 +224,38 @@ body {
 .service-card:hover .service-btn{
     border:2px solid transparent;
     background:
-        linear-gradient(#ffd54f,#ffd54f) padding-box,
+        linear-gradient(#1c0769,#300829) padding-box,
         linear-gradient(45deg,blue,purple) border-box;
+        color: white;
 }
 
 /* ARROW HOVER */
 .service-card:hover .service-arrow{
     background:linear-gradient(45deg,blue,purple);
     transform:rotate(20deg);
+}
+
+
+
+
+
+/* DESKTOP */
+@media(min-width:1025px){
+    .services-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+/* TABLET */
+@media(max-width:1024px){
+    .services-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .services-grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
 }

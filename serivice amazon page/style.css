@@ -1,0 +1,101 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* HERO SECTION */
+.hero-section{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-content{
+    color:white;
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+}
+
+.hero-content span{
+    color:#00AEEF;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* SECTION BOXES */
+.section{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    text-align:center;
+    color:#0a66c2;
+    margin-bottom:15px;
+}
+
+/* LISTS */
+ul{
+    margin-left:20px;
+    line-height:1.6;
+}
+
+/* CENTER TEXT */
+.center{
+    text-align:center;
+    font-size:16px;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+th, td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#0a66c2;
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+}
